@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+    <title>Paises mais procurados</title>
+</head>
+<body text="white" background="https://i.imgur.com/GqQsId4.jpg">
+   
+    <script type="text/javascript">
+        function leiaMais(n){
+    var mais = document.querySelector('.mais'+n);
+    var pontos = document.querySelector('.pontos'+n);
+    var btn = document.querySelector('btn'+n);
+
+    if(mais.style.display === 'block') {
+        mais.style.display = 'none';
+        pontos.style.display = 'block';
+    } else {
+        mais.style.display = 'block';
+        pontos.style.display = 'none';
+    }
+}
+    </script>
+<center>
+    <p style="font-size: 25px">País de Gales</p>
+    País de Gales, sudoeste da Grã-Bretanha
+    <span id="pontos1"></span>
+    <span class="mais1" style="display: none">conhecido pelo litoral acidentado, pelos parques nacionais montanhosos, pela diferenciada língua galesa e pela cultura celta. Cardiff, a capital, é uma refinada cidade costeira com uma vida noturna animada e um castelo medieval com interiores neogóticos ornamentados.</span>
+    <br>
+    <button onclick="leiaMais('1')" id="btn1">Ler mais</button>
+</p>
+<p>
+    <p style="font-size: 25px">França</p>
+    França, Europa Ocidental
+    <span id="pontos2"></span>
+    <span class="mais2" style="display: none">A França tem cidades medievais, aldeias alpinas e praias mediterrâneas. Paris, sua capital, é famosa pelas casas de alta costura, museus de arte clássica, como o Louvre, e monumentos como a Torre Eiffel.</span>
+    <br>
+    <button onclick="leiaMais('2')" id="btn2">Ler mais</button>
+</p>
+<p>
+    <p style="font-size: 25px">Paraguai</p>
+    Paraguai, América do Sul
+    <span id="pontos3"></span>
+    <span class="mais3" style="display: none">O Paraguai é um país sem saída para o mar que faz fronteira com a Argentina, o Brasil e a Bolívia. Ele tem grandes faixas de pantanal, floresta subtropical e Chaco, uma região selvagem que consiste em savanas e matagais. A capital, Assunção, situada às margens do rio Paraguai, abriga o grandioso Palácio do Governo e o Museo del Barro, que exibe peças de cerâmica pré-colombianas e rendas nhanduti que podem ser compradas em várias lojas.</span>
+    <br>
+    <button onclick="leiaMais('3')" id="btn3">Ler mais</button>
+</p>
+<p>
+    <p style="font-size: 25px">Angola</p>
+    Angola, África central
+    <span id="pontos4"></span>
+    <span class="mais4" style="display: none">Angola é um país no sul da África, com um território que abrange praias tropicais do Atlântico, além de um sistema labiríntico de rios e desertos subsaarianos que se estende até a Namíbia. A história colonial do país se reflete em sua cozinha de influência portuguesa e em marcos históricos, como a Fortaleza de São Miguel, construída pelos portugueses em 1576 para defender a capital, Luanda.</span>
+    <br>
+    <button onclick="leiaMais('4')" id="btn4">Ler mais</button>
+</p>
+
+
+
+</center>
+        
